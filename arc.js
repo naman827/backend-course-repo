@@ -37,7 +37,7 @@ const { Worker } = require("worker_threads");
 
 const start = Date.now();
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 10; i++) {
   const worker = new Worker("./worker.js");
 
   worker.on("message", (message) => {
